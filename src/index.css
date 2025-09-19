@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Private Insurance Underwriting Design System - Professional Actuarial Interface
+All colors MUST be HSL for proper theming
+*/
+
+@layer base {
+  :root {
+    /* Core Background & Surface Colors */
+    --background: 222 47% 4%;
+    --foreground: 210 40% 95%;
+    --surface: 222 40% 6%;
+    --surface-elevated: 222 35% 8%;
+
+    /* Card System */
+    --card: 222 40% 6%;
+    --card-foreground: 210 40% 95%;
+    --card-border: 222 30% 12%;
+
+    /* Navigation & Popover */
+    --popover: 222 40% 6%;
+    --popover-foreground: 210 40% 95%;
+
+    /* Brand Colors - Professional Insurance Blue */
+    --primary: 214 95% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 214 100% 65%;
+
+    /* Secondary - Actuarial Accent */
+    --secondary: 222 35% 15%;
+    --secondary-foreground: 210 40% 90%;
+
+    /* Muted Elements */
+    --muted: 222 25% 10%;
+    --muted-foreground: 210 20% 65%;
+
+    /* Accent - Encrypted Green */
+    --accent: 156 73% 35%;
+    --accent-foreground: 0 0% 100%;
+    --accent-glow: 156 85% 55%;
+
+    /* Status Colors */
+    --destructive: 0 84% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 156 73% 35%;
+    --warning: 45 93% 55%;
+
+    /* Interface Elements */
+    --border: 222 30% 12%;
+    --input: 222 35% 8%;
+    --ring: 214 95% 45%;
+
+    --radius: 0.5rem;
+
+    /* Professional Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-encrypted: linear-gradient(45deg, hsl(var(--accent)), hsl(var(--accent-glow)));
+    --gradient-surface: linear-gradient(180deg, hsl(var(--surface)), hsl(var(--surface-elevated)));
+    --gradient-card: linear-gradient(135deg, hsl(var(--card)), hsl(var(--surface-elevated)));
+
+    /* Security Shadows & Glows */
+    --shadow-card: 0 4px 20px -2px hsl(var(--primary) / 0.1);
+    --shadow-encrypted: 0 0 30px hsl(var(--accent-glow) / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.4);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: box-shadow 0.3s ease, transform 0.2s ease;
+
+    /* Sidebar Colors */
+    --sidebar-background: 222 40% 6%;
+    --sidebar-foreground: 210 40% 95%;
+    --sidebar-primary: 214 95% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 35% 15%;
+    --sidebar-accent-foreground: 210 40% 90%;
+    --sidebar-border: 222 30% 12%;
+    --sidebar-ring: 214 95% 45%;
+  }
+
+  /* Encrypted Shield Grid Animation */
+  .shield-grid {
+    background-image: 
+      linear-gradient(hsl(var(--accent) / 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--accent) / 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+    position: relative;
+  }
+
+  .shield-grid::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), 
+                hsl(var(--accent-glow) / 0.2) 0%, 
+                transparent 50%);
+    animation: glow-pulse 3s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  /* Chart & Data Visualizations */
+  .probability-chart {
+    background: var(--gradient-card);
+    border: 1px solid hsl(var(--card-border));
+    box-shadow: var(--shadow-card);
+  }
+
+  .encrypted-data {
+    background: linear-gradient(90deg, transparent, hsl(var(--accent) / 0.1), transparent);
+    animation: data-flow 2s linear infinite;
+  }
+
+  @keyframes glow-pulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.7; }
+  }
+
+  @keyframes data-flow {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
+  @keyframes encrypted-glow {
+    0%, 100% { 
+      box-shadow: 0 0 20px hsl(var(--accent-glow) / 0.3);
+    }
+    50% { 
+      box-shadow: 0 0 30px hsl(var(--accent-glow) / 0.6);
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
