@@ -15,7 +15,7 @@ import {
   Calendar,
   Download,
   RefreshCw,
-  Shield,
+  Zap,
   Eye,
   EyeOff
 } from "lucide-react";
@@ -123,7 +123,7 @@ const Analytics = () => {
                     Revenue Trends
                   </span>
                   <Badge variant="outline" className="border-accent text-accent">
-                    <Shield className="h-3 w-3 mr-1" />
+                    <Zap className="h-3 w-3 mr-1" />
                     Encrypted
                   </Badge>
                 </CardTitle>

@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { EncryptedButton } from "@/components/ui/encrypted-button";
 import { 
   FileText, 
-  Shield, 
+  Zap, 
   Clock, 
   CheckCircle,
   AlertTriangle,
@@ -14,7 +14,7 @@ import {
   User,
   Car,
   Home,
-  Heart,
+  Star,
   Search,
   Filter,
   Plus
@@ -116,7 +116,7 @@ const Policies = () => {
                       <div className="flex items-center gap-2 mb-1">
                         <h3 className="font-semibold">Auto Insurance Policy #4821</h3>
                         <Badge variant="outline" className="border-accent text-accent">
-                          <Shield className="h-3 w-3 mr-1" />
+                          <Zap className="h-3 w-3 mr-1" />
                           Encrypted
                         </Badge>
                       </div>
@@ -197,13 +197,13 @@ const Policies = () => {
                 <div className="flex items-start justify-between">
                   <div className="flex items-start gap-4">
                     <div className="p-2 bg-destructive/10 rounded-md">
-                      <Heart className="h-5 w-5 text-destructive" />
+                      <Star className="h-5 w-5 text-destructive" />
                     </div>
                     <div>
                       <div className="flex items-center gap-2 mb-1">
                         <h3 className="font-semibold">Life Insurance Policy #4823</h3>
                         <Badge variant="outline" className="border-accent text-accent">
-                          <Shield className="h-3 w-3 mr-1" />
+                          <Zap className="h-3 w-3 mr-1" />
                           Encrypted
                         </Badge>
                       </div>

@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { EncryptedButton } from "./ui/encrypted-button";
 import { 
   TrendingUp, 
-  Shield, 
+  Zap, 
   AlertTriangle, 
   CheckCircle, 
   Clock,
@@ -74,7 +74,7 @@ const Dashboard = () => {
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium flex items-center gap-2">
                 Encrypted Models
-                <Shield className="h-3 w-3 text-accent" />
+                <Zap className="h-3 w-3 text-accent" />
               </CardTitle>
               <Lock className="h-4 w-4 text-accent" />
             </CardHeader>
@@ -96,7 +96,7 @@ const Dashboard = () => {
                 <span>Risk Probability Analysis</span>
                 <div className="flex items-center gap-2">
                   <Badge variant="outline" className="border-accent text-accent">
-                    <Shield className="h-3 w-3 mr-1" />
+                    <Zap className="h-3 w-3 mr-1" />
                     Encrypted
                   </Badge>
                   <EncryptedButton variant="ghost" size="sm">

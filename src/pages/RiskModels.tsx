@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { EncryptedButton } from "@/components/ui/encrypted-button";
 import { 
   Brain, 
-  Shield, 
+  Zap, 
   TrendingUp, 
   BarChart3,
   Lock,
@@ -77,7 +77,7 @@ const RiskModels = () => {
               <CardHeader>
                 <CardTitle className="flex items-center justify-between">
                   <span className="flex items-center gap-2">
-                    <Shield className="h-5 w-5 text-accent" />
+                    <Zap className="h-5 w-5 text-accent" />
                     Auto Insurance Model v2.1
                   </span>
                   <Badge variant="outline" className="border-accent text-accent">
@@ -165,7 +165,7 @@ const RiskModels = () => {
               <CardHeader>
                 <CardTitle className="flex items-center justify-between">
                   <span className="flex items-center gap-2">
-                    <Shield className="h-5 w-5 text-accent" />
+                    <Zap className="h-5 w-5 text-accent" />
                     Property Insurance Model v3.0
                   </span>
                   <Badge variant="outline" className="border-accent text-accent">

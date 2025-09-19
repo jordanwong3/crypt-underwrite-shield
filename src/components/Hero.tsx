@@ -1,5 +1,5 @@
 import { EncryptedButton } from "./ui/encrypted-button";
-import { Shield, TrendingUp, Lock, Eye } from "lucide-react";
+import { Zap, TrendingUp, Lock, Eye } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -27,7 +27,7 @@ const Hero = () => {
           {/* Feature highlights */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-3xl mx-auto">
             <div className="flex items-center justify-center gap-3 p-4 rounded-lg bg-surface border border-card-border">
-              <Shield className="h-5 w-5 text-accent" />
+              <Zap className="h-5 w-5 text-accent" />
               <span className="text-sm font-medium">Encrypted Models</span>
             </div>
             <div className="flex items-center justify-center gap-3 p-4 rounded-lg bg-surface border border-card-border">

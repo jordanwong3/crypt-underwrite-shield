@@ -1,3 +1,4 @@
+<!-- This would be a PNG file, but I'll create an SVG that can be used as favicon -->
 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -5,10 +6,7 @@
       <stop offset="100%" style="stop-color:#9333ea;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <!-- Background with rounded corners matching Logo -->
   <rect width="32" height="32" rx="8" fill="url(#gradient)"/>
-  
-  <!-- Lightning bolt path matching Lucide Zap icon -->
   <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" 
         fill="white" 
         fill-opacity="0.95"

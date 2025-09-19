@@ -1,6 +1,6 @@
 import Logo from "./Logo";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
-import { Shield, Lock } from "lucide-react";
+import { Zap, Lock } from "lucide-react";
 
 const Header = () => {
   return (
@@ -26,7 +26,7 @@ const Header = () => {
 
           <div className="flex items-center space-x-4">
             <div className="hidden sm:flex items-center space-x-2 text-xs text-muted-foreground">
-              <Shield className="h-4 w-4 text-accent" />
+              <Zap className="h-4 w-4 text-accent" />
               <span>FHE Encrypted</span>
             </div>
             
